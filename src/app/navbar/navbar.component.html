@@ -1,0 +1,8 @@
+<div class="nav color-change-2x d-flex justify-content-end" style=" position: relative; height: 6vh; width: 100%;">
+    <!-- <button class="btn btn" routerLink="/list">List</button> -->
+    <button class="btn btn" routerLink="/createAccount">Create Account</button>
+    <button class="btn btn" routerLink="/managerLogin">Manager Login</button>
+    <button class="btn btn-success " routerLink="/login" *ngIf="this.dataStoreService.loginVar===false">Login</button>
+    <button class="btn btn-danger"  *ngIf="this.dataStoreService.loginVar===true" (click)="tryLogout()" >Logout</button>
+</div>
+

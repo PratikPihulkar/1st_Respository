@@ -1,0 +1,77 @@
+
+.mdiv{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.insideMdiv{
+    position: relative;
+    width: 70%;
+    margin:15% ;
+    margin-top: 5%;
+}
+.heading{
+    margin-bottom: 2rem;
+}
+
+input{
+    margin-bottom: 0rem;
+    height: 40px;
+}
+.infoDiv{
+    background-color: whitesmoke;
+}
+.loanDiv{
+    background-color: whitesmoke;
+}
+.btn{
+    margin-top: 5rem;
+    margin-right:2rem;
+    margin-bottom: 5rem;
+}
+.btn-danger{
+    background-color: rgb(230, 162, 162);
+    color: black;
+}
+.btn-success{
+    background-color: rgb(151, 228, 116);
+    color: black;
+}
+.btn-warning{
+    background-color: rgb(231, 206, 116);
+    color: black;
+}
+@media screen and (max-width:750px) {
+    .mdiv{
+        position: relative;
+        height: 110%;
+        width: 100%;
+    }
+    .insideMdiv{
+        position: relative;
+        width: 100%;
+        margin: 0%;
+    }
+    
+}
+.innerr{
+    padding:5%;
+   }
+@media screen and (max-width:400px) {
+   .innerr{
+    padding:2%;
+   }
+}
+.comm{
+    position: relative;
+    width: 70%;
+    margin:15% ;
+    margin-top: 3%;
+}
+label{
+    margin-top: 1rem;
+}
+.btn{
+    position: relative;
+    margin-right: 3rem;
+}

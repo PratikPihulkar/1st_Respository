@@ -1,0 +1,51 @@
+.mdiv{
+    position: relative;
+    height: 94%;
+    width: 100%;
+    margin: 0px;
+   /* background-color: #91c5d9; */
+   padding-top: 5rem ;
+   background: url("https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/white/Photoroom_white_background_extremely_fine_texture_only_white_co_b06d5b72-7c41-44cb-999e-2b3aeaaeeb50.jpg");
+
+}
+.boxx{
+    position: relative;
+    height: 40rem;
+    max-width: 30rem;
+    margin-left: 5rem;
+    border: 1px solid rgb(150, 150, 215);
+    
+    padding: 2rem;
+    
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    
+}   
+@media screen and (max-width:600px) {
+   .boxx{
+      padding:1rem;
+      padding-top: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+   }
+   
+   .mdiv{
+      
+   }
+}
+
+
+
+@keyframes color-animation {
+    0% {
+       background: #ad1457;
+    }
+    50% {
+       background: #6a1b9a;
+    } 
+    100% {
+       background: #bbdefb
+    } 
+ }

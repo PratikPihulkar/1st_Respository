@@ -1,0 +1,10 @@
+.mdiv
+{   position: relative;
+    height: 100%;
+    max-height: 94vh;
+    width: 100vw;
+    background: url('https://png.pngtree.com/thumb_back/fw800/background/20240529/pngtree-background-of-passbook-note-book-with-pen-calculator-image_15734113.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

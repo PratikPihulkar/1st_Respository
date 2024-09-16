@@ -1,0 +1,35 @@
+.btn{
+  height: 40px;
+  margin: auto 0 auto ;
+}
+.btn-success {
+ 
+  margin-right: 1rem;
+}
+.btn-danger {
+ 
+  margin-right: 1rem;
+}
+
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}
+
+ @-webkit-keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+  

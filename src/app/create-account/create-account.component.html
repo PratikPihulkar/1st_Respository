@@ -1,0 +1,101 @@
+<div class="mdiv">
+    <div class="insideMdiv">
+      <div class="heading"><h3>Register User-</h3></div>
+      <form [formGroup]="personalDetails" (ngSubmit)="saveData()">
+        <div class="infoDiv" style="border-radius: 20px;">
+          <div class="form-row row innerr">
+            <h5>Personal Details:</h5>
+  
+            
+            <div class="form-group col-md-12">
+              <label for="inputName4">Full Name:<span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="inputName4" formControlName="fullName" placeholder="Enter Full Name" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" onkeypress="return /[a-zA-Z\s]/i.test(event.key)" required>
+              <div *ngIf="personalDetails.get('fullName')?.touched && personalDetails.get('fullName')?.invalid" class="text-danger">
+                Full Name is required.
+              </div>
+            </div>
+  
+          
+            
+            <div class="form-group col-md-12">
+              <label for="image">Image Path: <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="image" formControlName="image" placeholder="Enter Image Path"  title="online image path " required>
+              <div *ngIf="personalDetails.get('image')?.touched && personalDetails.get('image')?.invalid" class="text-danger">
+                Image path is required.
+              </div>
+            </div>
+              
+            <div class="form-group col-md-12">
+              <label for="address">Address: <span class="text-danger">*</span></label>
+              <textarea class="form-control" id="address" formControlName="address" placeholder="Write address here"></textarea>
+              <div *ngIf="personalDetails.get('address')?.touched && personalDetails.get('address')?.invalid" class="text-danger">
+                <div *ngIf="personalDetails.get('address')?.errors?.['required']">Address is required.</div>
+                <div *ngIf="personalDetails.get('address')?.errors?.['maxlength']">Address must not exceed 500 characters. Current length: {{personalDetails.get('description')?.value.length}}</div>
+              </div>
+            </div>
+
+            <div class="form-group col-md-12">
+               <label for="inputMobile">Mobile: <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="inputMobile" formControlName="mobile" placeholder="10 digits only">
+                <div *ngIf="personalDetails.get('mobile')?.touched && personalDetails.get('mobile')?.invalid" class="text-danger">
+                  <div *ngIf="personalDetails.get('mobile')?.errors?.['required']">Mobile number is required.</div>
+                  <div *ngIf="personalDetails.get('mobile')?.errors?.['pattern']">Mobile number must be 10 digits.</div>
+                </div>
+            </div>
+
+
+
+            <div class="form-group col-md-6">
+              <label for="date">Account type: <span class="text-danger">*</span></label>
+              <select class="form-select" aria-label="Default select example" class="form-control" id="accountType" formControlName="accountType" placehplder="Select Account type">
+                
+                <option value="Saving Account">Saving Account</option>
+                <option value="Credit Account">Credit Account</option>
+                <option value="Domestic Account">Domestic Account</option>
+              </select>
+              <div *ngIf="personalDetails.get('accountType')?.touched && personalDetails.get('accountType')?.invalid" class="text-danger">
+                <div *ngIf="personalDetails.get('accountType')?.errors?.['required']">Account type is required.</div>
+                 </div>
+            </div>
+            
+            <div class="form-group col-md-6">
+              <label for="inputAmmount">Enter Opening Balence:<span class="text-danger">*</span></label>
+              <input type="number" class="form-control" id="inputAmmount" formControlName="openingBalence" placeholder="Enter Opening Balence" title="Only Number are allowed"  required>
+              <div *ngIf="personalDetails.get('openingBalence')?.touched && personalDetails.get('openingBalence')?.invalid" class="text-danger">
+                Opening Balence is required.
+              </div>
+            </div>
+
+
+              <div class="form-group col-md-6">
+                <label for="inputPassword">Enter Password:<span class="text-danger">*</span></label>
+                <input type="password" class="form-control" id="inputPassword" formControlName="password" placeholder="Enter Password" title="Number, Alphabet, and Special char" required>
+                <div *ngIf="personalDetails.get('password')?.touched && personalDetails.get('password')?.invalid" class="text-danger">
+                  <div *ngIf="personalDetails.get('password')?.errors?.['required']">Password is required</div>
+                  <div *ngIf="personalDetails.get('password')?.errors?.['pattern']">Password must contain at least one number, one alphabet, and one special character</div>
+                </div>
+              </div>
+            
+              <!-- Confirm Password -->
+              <div class="form-group col-md-6">
+                <label for="confirmPassword">Confirm Password:<span class="text-danger">*</span></label>
+                <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword" placeholder="Confirm Password" title="Number, Alphabet, and Special char" required>
+                <div *ngIf="personalDetails.get('confirmPassword')?.touched && personalDetails.get('confirmPassword')?.invalid" class="text-danger">
+                  <div *ngIf="personalDetails.get('confirmPassword')?.errors?.['required']">Confirm Password is required</div>
+                </div>
+                <div *ngIf="personalDetails.hasError('passwordMismatch')" class="text-danger">
+                  Passwords do not match
+                </div>
+              </div>
+            </div>
+
+        </div>
+        
+        
+        <div class="d-flex justify-content-end p-3">
+          <button type="button" class="btn btn-danger mr-2" (click)="goBack()">Cancel</button>
+          <button type="submit" class="btn btn-success"  routerLink="list">Create</button> <!-- [disabled]="personalDetails.invalid" -->
+        </div>
+      </form>
+    </div>
+  </div>

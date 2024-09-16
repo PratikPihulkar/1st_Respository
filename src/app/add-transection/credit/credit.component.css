@@ -1,0 +1,19 @@
+.mdiv{
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+}
+.insideMdiv{
+    position: relative;
+    height: auto;
+    width:80%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: #C4DFE6;
+    padding: 2%;
+    border-radius: 15px;
+}
+.btn{
+    position: relative;
+    margin-right: 2rem;
+}

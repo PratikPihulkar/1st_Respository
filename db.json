@@ -1,0 +1,196 @@
+{
+  "user": [
+    {
+      "id": "1bbb",
+      "fullName": "Kali Charan",
+      "address": "kamargaon ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Mars_Orbiter_Mission_-_India_-_ArtistsConcept.jpg",
+      "accountType": "Credit Account",
+      "openingBalence": 80000,
+      "password": "1234",
+      "confirmPassword": "1234"
+    },
+    {
+      "id": "11ea",
+      "fullName": "Raju Chahawala",
+      "address": "ZopadPatti, Sasti Colony, Wadala , Mubmai, Maharashtra 444110",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyzTWQoCUbRNdiyorem5Qp1zYYhpliR9q0Bw&s",
+      "accountType": "Saving Account",
+      "openingBalence": 40000,
+      "mobile": "9637383940",
+      "password": "1234",
+      "confirmPassword": "1234"
+    },
+    {
+      "id": "cc89",
+      "fullName": "Pinki Bhojanalay ",
+      "address": "San Fransisco, Kamargaon Road, Kamargaon, Maharashtra 444550",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6y8xdMzqgoLdNgSKvSuEmZmYDKVqeY7Pqtw&s",
+      "accountType": "Domestic Account",
+      "openingBalence": 454000,
+      "mobile": "9876543215",
+      "password": "1234",
+      "confirmPassword": "1234"
+    },
+    {
+      "id": "15f6",
+      "fullName": "Rajat Gupta",
+      "address": "Lamargaon Karanja Washim",
+      "image": "https://t4.ftcdn.net/jpg/03/20/15/41/240_F_320154152_eHKLYVH8vB6N6jiCq1iUJIPnnr5vzMrU.jpg",
+      "accountType": "Saving Account",
+      "openingBalence": 50000,
+      "mobile": "9527061974",
+      "password": "1234",
+      "confirmPassword": "1234"
+    }
+  ],
+  "trans": [
+    {
+      "id": "11ea",
+      "transectionList": [
+        {
+          "fullName": "Opening Balence",
+          "mobile": "",
+          "date": "23/08/2024, 16:44:16",
+          "currentBalence": 40000,
+          "credit": 40000
+        }
+      ]
+    },
+    {
+      "transectionList": [
+        {
+          "fullName": "Debit for food and rent",
+          "mobile": "9527061975",
+          "date": "30/08/2024, 12:32:57",
+          "currentBalence": 450000,
+          "debit": 4000
+        },
+        {
+          "fullName": "Debit for cloth bill",
+          "mobile": "5845455555",
+          "date": "30/08/2024, 12:34:59",
+          "currentBalence": 449500,
+          "debit": 500
+        },
+        {
+          "fullName": "mangal pande",
+          "mobile": "5845455555",
+          "date": "30/08/2024, 13:06:10",
+          "currentBalence": 450000,
+          "credit": 500
+        },
+        {
+          "fullName": "pratik pihulkar",
+          "mobile": "9876543210",
+          "date": "30/08/2024, 13:06:57",
+          "currentBalence": 450500,
+          "credit": 500
+        },
+        {
+          "fullName": "Credited by Company Salary Department",
+          "mobile": "8527419963",
+          "date": "30/08/2024, 14:08:56",
+          "currentBalence": 500500,
+          "credit": 50000
+        },
+        {
+          "fullName": "Kali charan Mungase send you on phonepay",
+          "mobile": "5845455555",
+          "date": "30/08/2024, 14:09:43",
+          "currentBalence": 501400,
+          "credit": 900
+        },
+        {
+          "fullName": "Credit by MAngal PAnde",
+          "mobile": "5845455555",
+          "date": "30/08/2024, 14:17:20",
+          "currentBalence": 506400,
+          "credit": 5000
+        },
+        {
+          "fullName": "Debited By SBI ",
+          "mobile": "5845455555",
+          "date": "30/08/2024, 14:43:31",
+          "currentBalence": 506800,
+          "credit": 400
+        },
+        {
+          "fullName": "Debited By SBI",
+          "mobile": "5845455555",
+          "date": "30/08/2024, 14:45:18",
+          "currentBalence": 507300,
+          "credit": 500
+        },
+        {
+          "fullName": "Debit for food and rent",
+          "mobile": "5845455555",
+          "date": "30/08/2024, 14:46:11",
+          "currentBalence": 516300,
+          "credit": 9000
+        },
+        {
+          "fullName": "x",
+          "mobile": "5845455555",
+          "date": "30/08/2024, 14:52:31",
+          "currentBalence": 516305,
+          "credit": 5
+        },
+        {
+          "fullName": "x",
+          "mobile": "8527419963",
+          "date": "30/08/2024, 14:52:43",
+          "currentBalence": 516303,
+          "debit": 2
+        },
+        {
+          "fullName": "s",
+          "mobile": "8527419963",
+          "date": "30/08/2024, 16:27:25",
+          "currentBalence": 516403,
+          "credit": 100
+        },
+        {
+          "fullName": "MAngal Pande",
+          "mobile": "5845455555",
+          "date": "30/08/2024, 16:28:45",
+          "currentBalence": 528757,
+          "credit": 12354
+        },
+        {
+          "id": "124",
+          "fullName": "x",
+          "mobile": "5845455555",
+          "date": "30/08/2024, 16:30:55",
+          "currentBalence": 528758,
+          "credit": 1
+        }
+      ],
+      "id": "cc89"
+    },
+    {
+      "id": "f178",
+      "transectionList": [
+        {
+          "fullName": "Opening Balence",
+          "mobile": "",
+          "date": "30/08/2024, 15:44:54",
+          "currentBalence": 1234,
+          "credit": 1234
+        }
+      ]
+    },
+    {
+      "id": "15f6",
+      "transectionList": [
+        {
+          "fullName": "Opening Balence",
+          "mobile": "",
+          "date": "30/08/2024, 18:42:14",
+          "currentBalence": 50000,
+          "credit": 50000
+        }
+      ]
+    }
+  ]
+}

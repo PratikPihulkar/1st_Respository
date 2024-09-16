@@ -1,0 +1,48 @@
+<div class="mdiv" style="padding-top: 2rem; width:96%; margin: 2%; margin-top: 0;">
+    <div class="btn btn-outline-secondary m-2" (click)="goBack()">
+        <i class="bi bi-backspace-fill"></i>&nbsp;Back
+    </div>
+    <div class="table-responsive" style="max-height: 90vh; overflow-y: auto; overflow-x: auto;">
+        <table class="table" style="width:100%; min-width: 1100px;">
+            <thead class="table-primary" style="position: sticky; top: 0; z-index: 1;">
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Counterparty and Details</th>
+                    <th scope="col">Debit</th>
+                    <th scope="col">Credit</th>
+                    <th scope="col">Balance</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of tempArr; let i=index">
+                    <td>
+                        <input *ngIf="editIndex === i" [(ngModel)]="item.date" class="form-control" type="text" />
+                        <span *ngIf="editIndex !== i">{{item.date}}</span>
+                    </td>
+                    <td>
+                        <input *ngIf="editIndex === i" [(ngModel)]="item.fullName" class="form-control" type="text" />
+                        <span *ngIf="editIndex !== i">{{item.fullName}}</span>
+                    </td>
+                    <td>
+                        <input *ngIf="editIndex === i" [(ngModel)]="item.debit" class="form-control" type="text" />
+                        <span *ngIf="editIndex !== i">{{item.debit}}</span>
+                    </td>
+                    <td>
+                        <input *ngIf="editIndex === i" [(ngModel)]="item.credit" class="form-control" type="text" />
+                        <span *ngIf="editIndex !== i">{{item.credit}}</span>
+                    </td>
+                    <td>
+                        <input *ngIf="editIndex === i" [(ngModel)]="item.currentBalence" class="form-control" type="text" />
+                        <span *ngIf="editIndex !== i">{{item.currentBalence}}</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-outline-secondary me-2" (click)="editTransection(i)">Edit</button>
+                        <button *ngIf="editIndex === i" class="btn btn-outline-success me-2" (click)="saveTransection(i)">Save</button>
+                        <button class="btn btn-outline-danger me-2" (click)="deletSingleTransection(i)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

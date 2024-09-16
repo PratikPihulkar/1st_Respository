@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+    height: 100%; 
+    width:100vw; 
+    /* background: url("https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/white/Photoroom_white_background_extremely_fine_texture_only_white_co_b06d5b72-7c41-44cb-999e-2b3aeaaeeb50.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+body::-webkit-scrollbar {
+    display: none;
+    
+}
